@@ -11,58 +11,139 @@
 </head>
 
 <body id="page">
-    <div class="container">
-        <nav>
-            <ul id="tabs" class="nav nav-tabs">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#shop">Shop</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
+<div class="container"></div>
+<nav>
+    <h3>🐭Mouse Over To Control Sound🐭</h3>
+    <ul id="tabs" class="nav nav-tabs">
+        <button id="pause">KILL SOUND (and reset)</button>
+        <li class="nav-item">
+            <a class="nav-link" href="#locrian">Locrian</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#asian">Asian</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#blues">Blues</a>
+        </li>
+    </ul>
+</nav>
 
-        <div class="tab-content">
-            <div id="home" class="tab-pane active">
-                <h2>This is Tab 1</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consequuntur officia quisquam
-                    repellendus sequi? Ad architecto aut dicta labore molestias nulla perferendis recusandae vel
-                    veritatis.</p>
-                <p>
-                    <img src="img/Ham-Sandwich.jpg" alt="Ham sandwich" id="sandwich">
-                    <br>
-                    <button id="animateButton">Animate!</button>
-                </p>
-            </div>
+<span id="superScale">
+            <audio id="eE" preload="auto"><source src="E.wav"></source></audio>
+            <audio id="fF" preload="auto"><source src="F.wav"></source></audio>
+            <audio id="gG" preload="auto"><source src="G.wav"></source></audio>
+            <audio id="aA" preload="auto"><source src="A.wav"></source></audio>
+            <audio id="aS" preload="auto"><source src="As.wav"></source></audio>
+            <audio id="bB" preload="auto"><source src="B.wav"></source></audio>
+            <audio id="cC" preload="auto"><source src="C.wav"></source></audio>
+            <audio id="dD" preload="auto"><source src="D.wav"></source></audio>
+            </span>
 
-            <div id="shop" class="tab-pane">
-                <h2>Thanks for visiting Tab 2</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam fuga mollitia repudiandae sit
-                    voluptate? Adipisci delectus et molestiae natus omnis quis, vitae voluptatem voluptatibus.
-                    Quisquam?</p>
-            </div>
+<div class="tab-content">
 
-            <div id="contact" class="tab-pane">
-                <h2>Tab 3 is the best tab</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium aspernatur commodi deleniti
-                    dignissimos dolores dolorum ea eum excepturi omnis, quos, repellat saepe sed soluta!</p>
-                <img src="img/die.png" alt="Six sided die" height="225" width="225"/>
-            </div>
-        </div>
+    <div class="container"></div>
+
+    <div id="locrian" class="tab-pane">
+        <h2>Locrian Pentatonic</h2>
+        <p>Five notes VERY Heavy: B D E F A </p>
+
+        <table class="table-bordered active">
+            <tbody>
+            <tr>
+                <td><h5 id="cl0">B</h5></td>
+                <td><h5 id="cl1">D</h5></td>
+                <td><h5 id="cl2">F</h5></td>
+            </tr>
+            <tr>
+                <td><h5 id="cl3">E</h5></td>
+                <td><h5 id="cl4">A</h5></td>
+                <td><h5 id="cl5">E</h5></td>
+            </tr>
+            <tr>
+                <td><h5 id="cl6">D</h5></td>
+                <td><h5 id="cl7">F</h5></td>
+                <td><h5 id="cl8">B</h5></td>
+            </tr>
+            </tbody>
+        </table>
+
+
+        <p id="rollThisL">click this line to add a backing track click KILL SOUNDS if its too much</p>
+
     </div>
 
+    <div id="asian" class="tab-pane">
+        <h2>Asian Scale</h2>
+        <p>Pentatonic majestic in nature: A B C E F</p>
+
+        <table class="table-bordered">
+            <tbody>
+            <tr>
+                <td><h5 id="ca0">A</h5></td>
+                <td><h5 id="ca1">E</h5></td>
+                <td><h5 id="ca2">B</h5></td>
+            </tr>
+            <tr>
+                <td><h5 id="ca3">B</h5></td>
+                <td><h5 id="ca4">F</h5></td>
+                <td><h5 id="ca5">C</h5></td>
+            </tr>
+            <tr>
+                <td><h5 id="ca6">C</h5></td>
+                <td><h5 id="ca7">E</h5></td>
+                <td><h5 id="ca8">A</h5></td>
+            </tr>
+            </tbody>
+        </table>
+
+        <p id="rollThisA">click this line to add a backing track click KILL SOUNDS if its too much</p>
+
+    </div>
+
+
+    <div id="blues" class="tab-pane">
+        <h2>Blues Scale</h2>
+        <p>Five notes in the Key of Guitar: E G A# B D</p>
+
+        <table class="table-bordered">
+            <tbody>
+            <tr>
+                <td><h5 id="c0">E</h5></td>
+                <td><h5 id="c1">G</h5></td>
+                <td><h5 id="c2">A#</h5></td>
+            </tr>
+            <tr>
+                <td><h5 id="c3">D</h5></td>
+                <td><h5 id="c4">B</h5></td>
+                <td><h5 id="c5">E</h5></td>
+            </tr>
+            <tr>
+                <td><h5 id="c6">G</h5></td>
+                <td><h5 id="c7">A#</h5></td>
+                <td><h5 id="c8">D</h5></td>
+            </tr>
+            </tbody>
+        </table>
+
+        <p id="rollThis1">click this line to add a backing track click KILL SOUNDS if its too much</p>
+
+    </div>
+     <h2 id="about1"><i>Notes Music Chords</i></h2>
+     <h3 id="about2"><i>click sound type to begin</i></h3>
+     <h4 id="about3"><i><b>Locrain </b><b>Asian </b><b>Blues</b></i></h4>
+     <p id="beingPlayed"></p><br>
+    <iframe src="./slideshow/slideshow.html" title="Visual Tutorial"></iframe>
     <!-- jQuery first -->
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <!-- Popper and Bootstrap second -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- Our code last -->
+    <!-- my code last -->
     <script src="tabs.js"></script>
 
+
+
+</div>
 </body>
 
 </html>

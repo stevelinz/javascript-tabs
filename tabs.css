@@ -1,20 +1,44 @@
 body {
     padding: 25px;
-    background-color: blanchedalmond;
+    background-color:lightskyblue;
 }
 
 .tab-pane {
     padding: 10px;
 }
-#home {
-    background-color: red;
+
+#locrian {
+    background-color:antiquewhite;
+    padding: 5px;
 }
 
-#shop {
-    background-color: green;
+#asian {
+    background-color:antiquewhite;
+    padding: 5px;
+
+}
+#blues {
+    background-color:antiquewhite;
+    padding: 5px;
+
+}
+.container{
+  width: fit-content;
 }
 
-#contact {
-    background-color: blue;
-    color: aliceblue;
+button{
+    color: crimson;
+}
+h3{
+    font-style: italic;
+}
+
+iframe{
+    width:available;
+    height:max-content;
+    alignment: center;
+}
+window{
+    max-width: 500px;
+    max-height: 250px;
 }
